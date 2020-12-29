@@ -41,7 +41,7 @@ func (c *Card) GetRank() uint8 {
 
 // GetSuit returns the suit of the card
 func (c *Card) GetSuit() string {
-	k := uint8(*c / 4)
+	k := uint8(*c / 13)
 	return suitMap[k]
 }
 
